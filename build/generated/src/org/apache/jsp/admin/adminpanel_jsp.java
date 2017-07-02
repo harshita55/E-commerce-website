@@ -1,0 +1,274 @@
+package org.apache.jsp.admin;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class adminpanel_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang=\"en\">\n");
+      out.write(" \n");
+      out.write("<head>\n");
+      out.write("   \n");
+      out.write(" <meta charset=\"utf-8\">\n");
+      out.write("    \n");
+      out.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      out.write("    \n");
+      out.write("<meta name=\"description\" content=\"\">\n");
+      out.write("    \n");
+      out.write("<meta name=\"author\" content=\"\">\n");
+      out.write("    \n");
+      out.write("<title>ADMIN | FaShi0nista!</title>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<script type=\"text/javascript\">\n");
+      out.write("\t\tfunction show(a)\n");
+      out.write("\t\t{\n");
+      out.write("\t\tvar ajx;\n");
+      out.write("                \n");
+      out.write(" \t   if (window.XMLHttpRequest)\n");
+      out.write(" \t   {// If the browser if IE7+[or] Firefox[or] Chrome[or] Opera[or]Safari\n");
+      out.write(" \t     ajx=new XMLHttpRequest();\n");
+      out.write(" \t   }\n");
+      out.write(" \t  else\n");
+      out.write(" \t   {//If browser is IE6, IE5\n");
+      out.write(" \t     ajx=new ActiveXObject(\"Microsoft.XMLHTTP\");\n");
+      out.write(" \t   }\n");
+      out.write("\tajx.onreadystatechange=function()\n");
+      out.write("\t{\n");
+      out.write("\t  if (ajx.readyState==4 && ajx.status==200)\n");
+      out.write("\t  { \n");
+      out.write("\t    document.getElementById(\"mydiv\").innerHTML=ajx.responseText;\n");
+      out.write("\t   }\n");
+      out.write("\t}\n");
+      out.write("\tajx.open(\"GET\",a,true);\n");
+      out.write("\tajx.send();\n");
+      out.write("\t} \n");
+      out.write("     </script>\n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("   \n");
+      out.write(" <link href=\"../css/bootstrap.min.css\" rel=\"stylesheet\">\n");
+      out.write("   \n");
+      out.write(" <link href=\"../css/font-awesome.min.css\" rel=\"stylesheet\">\n");
+      out.write("    \n");
+      out.write("<link href=\"../css/prettyPhoto.css\" rel=\"stylesheet\">\n");
+      out.write("    \n");
+      out.write("<link href=\"../css/price-range.css\" rel=\"stylesheet\">\n");
+      out.write("    \n");
+      out.write("<link href=\"../css/animate.css\" rel=\"stylesheet\">\n");
+      out.write("\t\n");
+      out.write("<link href=\"../css/main.css\" rel=\"stylesheet\">\n");
+      out.write("\t\n");
+      out.write("<link href=\"../css/responsive.css\" rel=\"stylesheet\">\n");
+      out.write("    \n");
+      out.write("<!--[if lt IE 9]>\n");
+      out.write("    \n");
+      out.write("<script src=\"js/html5shiv.js\"></script>\n");
+      out.write("   \n");
+      out.write(" <script src=\"js/respond.min.js\"></script>\n");
+      out.write("  \n");
+      out.write("  <![endif]-->       \n");
+      out.write("    \n");
+      out.write("<link rel=\"shortcut icon\" href=\"../images/ico/favicon.ico\">\n");
+      out.write("    \n");
+      out.write("\n");
+      out.write("<link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"../images/ico/apple-touch-icon-144-precomposed.png\">\n");
+      out.write("    \n");
+      out.write("<link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"../images/ico/apple-touch-icon-114-precomposed.png\">\n");
+      out.write(" \n");
+      out.write("   <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"../images/ico/apple-touch-icon-72-precomposed.png\">\n");
+      out.write("  \n");
+      out.write("  <link rel=\"apple-touch-icon-precomposed\" href=\"../images/ico/apple-touch-icon-57-precomposed.png\">\n");
+      out.write("</head><!--/head-->\n");
+      out.write("\n");
+      out.write("<body>\n");
+      out.write("     <header id=\"header\"><!--header-->\n");
+      out.write("\t\t\n");
+      out.write("<div class=\"header_top\"><!--header_top-->\n");
+      out.write("\t\t\t\n");
+      out.write("<div class=\"container\">\n");
+      out.write("\t\t\t\t\n");
+      out.write("<div class=\"row\">\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("<div class=\"col-sm-6\">\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("<div class=\"contactinfo\">\n");
+      out.write("\t\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("<ul class=\"nav nav-pills\">\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-phone\">\n");
+      out.write("</i> +2 95 01 88 821</a></li>\n");
+      out.write("\t\t\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\">\n");
+      out.write("<li class=\"fa fa-envelope\">\n");
+      out.write("</li> info@domain.com</a></li></ul>\n");
+      out.write("</div>\n");
+      out.write("</div>\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("<div class=\"col-sm-6\">\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("<div class=\"social-icons pull-right\">\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("<ul class=\"nav navbar-nav\">\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-facebook\"></i></a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-twitter\"></i></a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-linkedin\"></i></a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-dribbble\"></i></a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-google-plus\"></i></a></li>\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("</ul>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\t\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\t\t\n");
+      out.write("</div><!--/header_top-->\n");
+      out.write("\t\t\n");
+      out.write("\t\t\n");
+      out.write("<div class=\"header-middle\"><!--header-middle-->\n");
+      out.write("\t\t\t\n");
+      out.write("<div class=\"container\">\n");
+      out.write("\t\t\t\t\n");
+      out.write("<div class=\"row\">\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("<div class=\"col-sm-4\">\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("<div class=\"logo pull-left\">\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("    <a href=\"../index.jsp\"><img src=\"../images/home/Logo 1.jpg\" style=\"width: 250px;height: 120px; \"alt=\"\" /></a>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("</div>\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("<div class=\"col-sm-8\">\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("<div class=\"shop-menu pull-right\">\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("<ul class=\"nav navbar-nav\">\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"#\"><i class=\"fa fa-star\"></i> Wishlist</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"../checkout.jsp\"><i class=\"fa fa-crosshairs\"></i> Checkout</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("<li><a href=\"../cart.jsp\"><i class=\"fa fa-shopping-cart\"></i> Cart</a></li>\t\n");
+      out.write("    </header>\n");
+      out.write("    \n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("   \n");
+      out.write("    <section id=\"form\" style=\"margin-top: 0px;\"><!--form-->\n");
+      out.write("\t\t\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\t\t<div class=\"col-sm-4 col-sm-offset-0\">\n");
+      out.write("\t\t\t\t\t<div class=\"login-form\"><!--login form-->\n");
+      out.write("\t\t\t\t\t\t<form  method=\"post\" enctype=\"multipart/form-data\">\n");
+      out.write("                                                    <h3><a onclick=\"show('edit.jsp')\"/>EDIT PROFILE</h3>\n");
+      out.write("                                                    \n");
+      out.write("                                                    <h3><a onclick=\"show('AddProduct.jsp')\"/>ADD PRODUCT</h3>\n");
+      out.write("                                                     <h3>UPDATE PRODUCT</h3>\n");
+      out.write("                                                  \n");
+      out.write("                                                     <h3><a href=\"../logout.jsp\"/>LOGOUT</h3>\n");
+      out.write("                                                 </form>\n");
+      out.write("\n");
+      out.write("                                               \n");
+      out.write("                                         </a>\n");
+      out.write("                                               \n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t\n");
+      out.write("                                    <div  id=\"mydiv\"><!--sign up form-->\n");
+      out.write("                                            ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "adminbody.jsp", out, false);
+      out.write("\n");
+      out.write("                                          \n");
+      out.write("\t\t\t\t\t</div><!--/sign up form-->\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t</section><!--/form-->\t\t\t\t\n");
+      out.write("\n");
+      out.write("    \n");
+      out.write("    ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../footer.jsp", out, false);
+      out.write("<!--/Footer-->\n");
+      out.write("\t\n");
+      out.write("\n");
+      out.write("  \n");
+      out.write("    <script src=\"../js/jquery.js\"></script>\n");
+      out.write("\t<script src=\"../js/bootstrap.min.js\"></script>\n");
+      out.write("\t<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>\n");
+      out.write("    <script type=\"text/javascript\" src=\"js/gmaps.js\"></script>\n");
+      out.write("\t<script src=\"../js/contact.js\"></script>\n");
+      out.write("\t<script src=\"../js/price-range.js\"></script>\n");
+      out.write("    <script src=\"../js/jquery.scrollUp.min.js\"></script>\n");
+      out.write("    <script src=\"../js/jquery.prettyPhoto.js\"></script>\n");
+      out.write("    <script src=\"../js/main.js\"></script>\n");
+      out.write("</body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
